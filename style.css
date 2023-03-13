@@ -1,3 +1,104 @@
-h1 {
-    color: burlywood;
+/* body {
+    font-family: 'Lato', sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow-x: hidden;
+    background-image: url(./images/main-bg.png);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: 50%;
+} */
+
+h1,h2,h3,p {
+    font-family: 'Lato', sans-serif;
 }
+
+.nav-1{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    line-height: 200%;
+}
+
+.c-1 {
+    color: #ec5242;
+}
+
+.bi {
+    color: white;
+}
+ /*----------------------------------------------  */
+
+.intro-title{
+    font-weight: 600;
+    font-size: 50px;
+    color: #ec5242;
+    text-shadow: 1px 1px 2px black, 0 0 2px #ec5242, 0 0 2px #ec5242;
+}
+
+.intro-text{
+    width: 95%;
+    background: #ebebeb;
+}
+
+.intro-when{
+    font-weight: 600;
+    font-size: 36px;
+    color: rgb(33, 71, 97);
+}
+
+.program {
+    background-image: url(./images/programme-bg.png);
+    background-repeat:repeat-y;
+    block-size: 100%;
+    background-position-x: center;
+    background-position-y: 100%;
+}
+
+.program-title{
+    color: white;
+}
+
+.program-hr{
+    margin-left: 45%;
+    width: 15%;
+    height: 2px;
+    border: 3px solid rgb(255, 102, 0);
+}
+
+.events {
+    color: #ec5242;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.single-event {
+    background-color: rgba(128, 128, 128, 0.6);
+    height: 50%;
+}
+
+.event-text {
+    color: white;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.reg-btn {
+    color: white;
+    background-color: #ec5242;
+}
+.picture-b{
+    width: 80px;
+    height: 80px;
+}
+
+.picture-s {
+    width: 150px;
+    height: 150px;
+    margin-top: -25%;
+}
+
+/* @media only screen and (min-width: 767px){
+	.event-container {
+        display: none;
+    }
+} */
