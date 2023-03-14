@@ -75,7 +75,7 @@ This is my first capstone project at Microverse! The National educational Summit
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [<a href="https://emhamza.github.io/My-portfolio-site/" target="_blank">Online version</a>](#)
+- [<a href="https://emhamza.github.io/Capstone-1/" target="_blank">Online version</a>](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,7 +140,7 @@ To run tests, run the following command: npm test
 Example command:
 
 ```sh
-  npx stylelint "**/*.{css,scss}"
+  npx stylelint "**/*.{css,scss}" --fix
 ```
 ```sh
   npx eslint "**/*.js" --fix
