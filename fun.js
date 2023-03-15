@@ -1,4 +1,5 @@
-// Mobile Menu
+// Mobile Menu---------------------
+
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -53,25 +54,28 @@ const speakerInfo = [
   {
     id: 'Sam',
     name: 'Sam Cobb',
-    post: 'Works at the Alannah and Madeline Foundation as an eSmart Advisor in the Policy and Prevention team',
+    post: 'Works at the Alannah and Madeline Foundation as an eSmart Advisor <br>in the Policy and Prevention team',
     picture: './images/Sam.png',
     text: 'Sam has always been people-focused, having spent a decade in stakeholder engagement roles within universities, developing relationships with industry, education partners and schools through Australia and South-East Asia.',
   },
 ];
+
 const personalities = document.getElementById('speakers');
 
 function displayPersonality() {
   let displayPer = '';
   for (let i = 0; i < 6; i += 1) {
-    displayPer += `<div class="d-flex flex-column">
-    <img class="picture-b mx-4" src="./images/wb-bg.jpg" alt="backgroung design image">
-    <img class="picture-s mx-5" src="${speakerInfo[i].picture}" alt="backgroung design image">
-    </div>
-                    <div class='speaker-info d-flex flex-column'>
-                        <h2 class='speaker-name'>${speakerInfo[i].name}</h2>
-                        <h3 class='speaker-post'>${speakerInfo[i].post}</h3>
-                        <hr class='speaker-hr'>
-                        <p class='speaker-data'>${speakerInfo[i].text}</p>
+    displayPer += `<div class='sara'>
+                      <div class="d-flex flex-column">
+                      <img class="picture-b" src="./images/wb-bg.jpg" alt="backgroung design image">
+                      <img class="picture-s" src="${speakerInfo[i].picture}" alt="backgroung design image">
+                      </div>
+                                      <div class='speaker-info'>
+                                          <h2 class='speaker-name'>${speakerInfo[i].name}</h2>
+                                          <h3 class='speaker-post'>${speakerInfo[i].post}</h3>
+                                          <hr class='speaker-hr'>
+                                          <p class='speaker-data'>${speakerInfo[i].text}</p>
+                        </div>
                     </div>
                       
         `;
@@ -80,6 +84,3 @@ function displayPersonality() {
 }
 
 displayPersonality();
-
-// const personalitiesDesk = document.getElementById('speakers-y');
-// personalitiesDesk.innerHTML = displayPer;

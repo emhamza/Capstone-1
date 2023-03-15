@@ -2,7 +2,7 @@
 .big-bg1 {
   background-image: url(./images/big-bg.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center right;
 }
 
 h1,
@@ -10,6 +10,12 @@ h2,
 h3,
 p {
   font-family: 'Lato', sans-serif;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
 }
 
 .nav-1 {
@@ -83,6 +89,7 @@ p {
   background: #ebebeb;
   margin-left: 6%;
   margin-right: 4%;
+  border: 6px solid white;
 }
 
 .intro-text {
@@ -105,10 +112,7 @@ p {
 
 .program {
   background-image: url(./images/programme-bg.png);
-  background-repeat: repeat-y;
-  block-size: 100%;
-  background-position-x: center;
-  background-position-y: 100%;
+  background-size: 100%;
 }
 
 .program-title {
@@ -161,17 +165,20 @@ p {
 .picture-b {
   width: 80px;
   height: 80px;
+  margin-left: 5%;
 }
 
 .picture-s {
   width: 150px;
   height: 150px;
   margin-top: -8%;
+  margin-left: 7%;
 }
 
 .speaker-info {
-  width: 500px;
-  margin-left: 250px;
+  width: 50%;
+  margin-left: 35%;
+  margin-right: 0;
   margin-top: -180px;
 }
 
@@ -194,7 +201,9 @@ p {
 }
 
 .speaker-hr {
-  width: 5%;
+  width: 8%;
+  margin: 1%;
+  height: 10px;
 }
 
 /* About Page Styling goes there */
@@ -360,6 +369,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 45px;
 }
 
 #logo {
@@ -375,8 +385,6 @@ p {
     position: absolute;
     left: -107%;
     top: 3%;
-
-    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
@@ -423,6 +431,10 @@ p {
 
   .view-program {
     display: none;
+  }
+
+  .br-line {
+    margin-left: 46%;
   }
 }
 
@@ -482,7 +494,7 @@ p {
     background-color: rgba(128, 128, 128, 0.6);
     height: 50vh;
     width: 50%;
-    margin-top: 0%;
+    margin-top: 5%;
     margin-left: 0%;
     margin-right: 0%;
     padding: 0;
@@ -490,8 +502,7 @@ p {
 
   .program {
     background-repeat: repeat-x;
-
-    /* block-size: 100%; */
+    background-repeat: repeat-y;
     background-position-x: 100%;
     background-position-y: 100%;
   }
@@ -524,10 +535,6 @@ p {
     display: flex;
   }
 
-  .big-bg {
-    background-image: none;
-  }
-
   .intro-text {
     margin: 0% 11%;
   }
@@ -547,12 +554,89 @@ p {
   }
 
   .program-title {
-    margin-top: 10%;
+    padding-top: 5%;
   }
 
-  /* .speaker-x {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  .speaker-x {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
 
- } */
+  .sara {
+    justify-self: center;
+  }
+
+  .picture-s {
+    width: 100px;
+    height: 100px;
+    margin-top: -18%;
+    margin-left: 10%;
+  }
+
+  .speaker-name {
+    font-size: 12px;
+  }
+
+  .speaker-post {
+    font-size: 8px;
+  }
+
+  .speaker-data {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .speaker-info {
+    width: 50%;
+    margin-top: -115px;
+    margin-left: 45%;
+  }
+
+  .past-1,
+  .past-2 {
+    background-size: 135%;
+  }
+}
+
+/* for larger screens */
+
+@media only screen and (min-width: 1200px) {
+  .sara {
+    justify-self: center;
+    height: 100%;
+  }
+
+  .picture-s {
+    width: 180px;
+    height: 180px;
+    margin-top: -10%;
+    margin-left: 9%;
+  }
+
+  .speaker-name {
+    font-size: 20px;
+  }
+
+  .speaker-post {
+    font-size: 12px;
+  }
+
+  .speaker-data {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .speaker-info {
+    width: 50%;
+    margin-top: -200px;
+    margin-left: 45%;
+  }
+
+  .past-1,
+  .past-2 {
+    background-size: 110%;
+  }
 }
