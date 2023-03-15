@@ -1,7 +1,6 @@
-.big-bg,
-.big-bg1 {
+.big-bg{
   background-image: url(./images/big-bg.png);
-  background-repeat: no-repeat;
+  background-repeat:repeat;
   background-position: center right;
 }
 
@@ -27,6 +26,12 @@ a {
 
 .c-1 {
   color: #ec5242;
+  font-size: 14px;
+}
+
+.c-2 {
+  color: #ec5242;
+  margin-left: 8%;
 }
 
 .bi {
@@ -45,22 +50,29 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
-  margin: 5% 10% 0% 0%;
+  /* padding: 0; */
+  margin: -3% 0 5% 7%;
 }
 
 .bar {
   display: block;
-  width: 2rem;
-  height: 0.25rem;
-  margin: 10%;
-  background-color: #28352f;
-  border: 1px solid #28352f;
+  width: 2.5rem;
+  height: 0.5rem;
+  margin: 0.5%;
+  background-color: #2f443a;
+  border: 1px solid #2f443a;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 /* ----------------------------------------------  */
+
+.m-logo{
+  width: 50%;
+  line-height: normal;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
 
 .mobile-link {
   font-family: "Inter", sans-serif;
@@ -236,13 +248,13 @@ a {
 .past-1 {
   background-image: linear-gradient(#f5331dbf, #f2331ea2), url(./images/2022-summit.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 150%;
 }
 
 .past-2 {
   background-image: linear-gradient(#f5331dbf, #f2331ea2), url(./images/NES+MEL+23+HP.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 150%;
 }
 
 .about-past0 {
@@ -273,8 +285,9 @@ a {
 
 /* Prtners section styling */
 
-.partner-whole {
-  background-color: #28352f;
+.partner-whole,
+.partner-whole-1 {
+  background-color: #272a31;
 }
 
 .partners-title {
@@ -283,32 +296,50 @@ a {
 
 .partners-main {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .partners-pic {
   width: 80%;
   height: 70%;
+  padding-bottom: 10%;
 }
 
 .footer {
+  background-color:#272a31;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.footer-a,
+.footer-b {
   display: flex;
   justify-content: center;
   margin-top: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 6%;
+  margin-bottom: 5%;
+}
+
+.footer-a1 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .footer-1 {
   font-size: 20px;
   font-weight: bold;
-  color: rgb(75, 73, 73);
+  color: #ebebeb;
 }
 
+
 .footer-2 {
-  color: rgb(75, 73, 73);
+  color: #ebebeb;
 }
 
 .past-c {
@@ -346,8 +377,9 @@ a {
 .nav-red {
   color: #ec5242;
   text-decoration: none;
-  border: 2px solid #ec5242;
-  padding: 2% 5px;
+  border: 3px solid #ec5242;
+  padding: 2% 2%;
+  font-size: 14px;
 }
 
 .event-container {
@@ -376,6 +408,30 @@ a {
   margin-top: 0;
 }
 
+.D-nav{
+  width: 100%;
+}
+
+.footer-b1 {
+  font-size: 0.8rem;
+  font-weight: bolder;
+  margin-left: 15%;
+}
+
+.footer-b2 {
+  font-size: 0.8rem;
+  line-height: normal;
+}
+
+.more-btn {
+  width: 90%;
+  margin: 8% 5% 10% 5%;
+}
+
+.arrow {
+  color: #ec5242;
+  margin-left: 3%;
+}
 /* --------------------------------------- -------------------------------------------------- */
 
 /* Media Quries */
@@ -394,8 +450,17 @@ a {
     opacity: 0.95;
   }
 
+  .m-logo{
+    display: none;
+  }
+
+  .c-2 {
+    margin-left: 0%;
+    margin-top: 5%;
+  }
+
   .mobile-items {
-    margin: 5% 10% 0% 10%;
+    margin: 15% 10% 0% 10%;
   }
 
   .mobile-menu.active {
@@ -411,14 +476,14 @@ a {
     opacity: 0.6;
     background-color: whitesmoke;
     border: #ebebeb;
-    transform: translateY(10px) rotate(45deg);
+    transform: translateY(0.75rem) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
     opacity: 0.6;
     background-color: whitesmoke;
     border: #ebebeb;
-    transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-0.75rem) rotate(-45deg);
   }
 
   .black-nav {
@@ -436,7 +501,22 @@ a {
   .br-line {
     margin-left: 46%;
   }
+
+  .sara {
+    justify-self: center;
+    height: 100%;
+  }
+
+  .partner-whole {
+    display: none;
+  }
+
+  .footer-a,
+  .footer {
+    display: none;
+  }
 }
+
 
 @media screen and (min-width: 768px) {
   .mobile-menu,
@@ -454,11 +534,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 100%;
   }
 
-  .intro-title,
-  .c-1 {
+  .intro-title{
     margin-left: 8%;
   }
 
@@ -492,7 +571,7 @@ a {
     display: flex;
     flex-direction: column;
     background-color: rgba(128, 128, 128, 0.6);
-    height: 50vh;
+    height: 5%;
     width: 50%;
     margin-top: 5%;
     margin-left: 0%;
@@ -517,6 +596,9 @@ a {
     padding-top: 10%;
     padding-left: 8%;
     padding-right: 8%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 9px;
   }
 
   .x-1 {
@@ -603,6 +685,17 @@ a {
   .br-line {
     margin-left: 46%;
   }
+
+  .partner-whole-1 {
+    display: none;
+  }
+
+  .footer-b{
+    display: none;
+  }
+  .last-btn {
+    display: none;
+  }
 }
 
 /* for larger screens */
@@ -647,4 +740,87 @@ a {
   .br-line {
     margin-left: 47%;
   }
+
+  .desk-main-nav {
+    width: 100%;
+  }
+
+  .desk-main-nav {
+    margin-left: 30%;
+  }
+
+  .partner-whole {
+    height: 5%;
+  }
+
+  .partners-pic {
+    width: 60%;
+    height: 90%;
+    padding-bottom: 10%;
+  }
+
+  .partner-whole-1 {
+    display: none;
+  }
+
+  .footer-b{
+    display: none;
+  }
+
+  .last-btn {
+    display: none;
+  }
 }
+
+@media screen and (max-width: 365px){
+  .picture-s {
+    margin-top: -20%;
+    margin-left: 9%;
+  }
+
+  .picture-b {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 599px){
+  .sara {
+    justify-self: center;
+    height: 100%;
+    width: 80%;
+  }
+
+  .picture-s {
+    width: 80px;
+    height: 80px;
+    margin-top: -9%;
+    margin-left: 9%;
+  }
+
+  .picture-b {
+    width: 50px;
+    height: 50px;
+  }
+
+  .speaker-name {
+    font-size: 12px;
+  }
+
+  .speaker-post {
+    font-size: 8px;
+  }
+
+  .speaker-data {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .speaker-info {
+    width: 50%;
+    margin-top: -115px;
+    margin-left: 45%;
+  }
+}
+
+
