@@ -1,6 +1,6 @@
-.big-bg{
+.big-bg {
   background-image: url(./images/big-bg.png);
-  background-repeat:repeat;
+  background-repeat: repeat;
   background-position: center right;
 }
 
@@ -50,6 +50,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   /* padding: 0; */
   margin: -3% 0 5% 7%;
 }
@@ -67,7 +68,7 @@ a {
 
 /* ----------------------------------------------  */
 
-.m-logo{
+.m-logo {
   width: 50%;
   line-height: normal;
   margin-top: 2%;
@@ -306,7 +307,7 @@ a {
 }
 
 .footer {
-  background-color:#272a31;
+  background-color: #272a31;
   display: flex;
   justify-content: center;
   margin-top: 10%;
@@ -336,7 +337,6 @@ a {
   font-weight: bold;
   color: #ebebeb;
 }
-
 
 .footer-2 {
   color: #ebebeb;
@@ -408,7 +408,7 @@ a {
   margin-top: 0;
 }
 
-.D-nav{
+.D-nav {
   width: 100%;
 }
 
@@ -432,6 +432,7 @@ a {
   color: #ec5242;
   margin-left: 3%;
 }
+
 /* --------------------------------------- -------------------------------------------------- */
 
 /* Media Quries */
@@ -450,7 +451,7 @@ a {
     opacity: 0.95;
   }
 
-  .m-logo{
+  .m-logo {
     display: none;
   }
 
@@ -517,7 +518,6 @@ a {
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .mobile-menu,
   .hamburger {
@@ -537,7 +537,7 @@ a {
     width: 100%;
   }
 
-  .intro-title{
+  .intro-title {
     margin-left: 8%;
   }
 
@@ -690,9 +690,10 @@ a {
     display: none;
   }
 
-  .footer-b{
+  .footer-b {
     display: none;
   }
+
   .last-btn {
     display: none;
   }
@@ -743,9 +744,6 @@ a {
 
   .desk-main-nav {
     width: 100%;
-  }
-
-  .desk-main-nav {
     margin-left: 30%;
   }
 
@@ -763,7 +761,7 @@ a {
     display: none;
   }
 
-  .footer-b{
+  .footer-b {
     display: none;
   }
 
@@ -772,7 +770,7 @@ a {
   }
 }
 
-@media screen and (max-width: 365px){
+@media screen and (max-width: 365px) {
   .picture-s {
     margin-top: -20%;
     margin-left: 9%;
@@ -784,7 +782,7 @@ a {
   }
 }
 
-@media screen and (max-width: 599px){
+@media screen and (max-width: 599px) {
   .sara {
     justify-self: center;
     height: 100%;
@@ -822,5 +820,3 @@ a {
     margin-left: 45%;
   }
 }
-
-
