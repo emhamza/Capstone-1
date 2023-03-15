@@ -599,6 +599,10 @@ a {
   .past-2 {
     background-size: 135%;
   }
+
+  .br-line {
+    margin-left: 46%;
+  }
 }
 
 /* for larger screens */
@@ -638,5 +642,9 @@ a {
   .past-1,
   .past-2 {
     background-size: 110%;
+  }
+
+  .br-line {
+    margin-left: 47%;
   }
 }

@@ -187,7 +187,8 @@ If you like this project then please follow me on Linkedin, Twitter and GitHub. 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microvers and Behance for this project!
+I would like to thank Microvers for this project!
+I would also like to thank Cindy Shin in Behance who created the original design!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
