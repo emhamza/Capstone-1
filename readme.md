@@ -167,7 +167,7 @@ GitHub Pages
 
 - [ ] **[More section inclusiveness]**
 - [ ] **[Desktop Responsivness]**
-- [ ] **[Animation ]**
+- [ ] **[Animation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
